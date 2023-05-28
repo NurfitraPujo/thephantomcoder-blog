@@ -4,18 +4,17 @@
 @import "@shoelace-style/shoelace/dist/themes/dark.css";
 
 :root {
-  --body-background: #444;
+  --body-background: #232323;
   --body-color: #f2f2f2;
   --heading-color: black;
-  --action-color: #d64045;
+  --action-color: #8779ab;
+  --secondary-text-color: #9a9a9a;
 }
 
 body {
   background: var(--body-background);
   color: var(--body-color);
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    "Helvetica", "Arial", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin: 0 8px;
   font-size: 108%;
   line-height: 1.5;
@@ -36,30 +35,44 @@ h1 {
   line-height: 1.2;
 }
 
-body > header {
+.navbar {
   margin: 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-body > header img {
+.navbar img {
   display: inline-block;
   width: 400px;
   max-width: 100%;
 }
 
-body > nav ul {
-  margin: 2rem 0;
+.tagline {
+  margin: 3px 0;
+  color: var(--secondary-text-color);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.main-nav ul {
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
-body > nav a {
+.main-nav a {
   text-decoration: none;
+  color: var(--body-color);
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--action-color);
 }
 
 main {
