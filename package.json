@@ -27,6 +27,7 @@
     "@hotwired/turbo": "^7.3.0",
     "@shoelace-style/shoelace": "^2.4.0",
     "bridgetown-lit-renderer": "2.0.0",
+    "bridgetown-quick-search": "2.0.0",
     "esbuild-plugin-lit-css": "^2.0.3",
     "lit": "^2.7.4",
     "open-props": "^1.5.8"

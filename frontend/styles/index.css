@@ -16,6 +16,7 @@
 body {
   background: var(--body-background);
   color: var(--body-color);
+  min-height: 100vh;
   font-family: "Noto Sans", sans-serif;
   margin: 0 8px;
   font-size: 108%;
@@ -137,10 +138,10 @@ h1 {
 }
 
 main {
-  flex: 1 auto;
-  margin: 0 auto 4rem;
+  flex: 1;
+  margin: 10px auto 4rem;
   width: 100%;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 400px);
   border-radius: 3px;
 
   @media (max-width: 500px) {
@@ -193,6 +194,10 @@ hr {
 }
 
 /* Post page */
+article {
+  line-height: 1.8;
+}
+
 .post {
   margin: 20px auto;
   width: 80%;
@@ -206,4 +211,16 @@ hr {
 .post .published_at {
   color: var(--secondary-text-color);
   font-weight: 200;
+}
+
+blockquote {
+  color: var(--secondary-text-color);
+  font-weight: 200;
+  border-left: 5px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.425em 10px;
+}
+
+blockquote > p {
+  margin: 0;
 }
