@@ -35,3 +35,9 @@ gem "puma", "~> 5.6"
 gem "bridgetown-lit-renderer", "~> 2.0"
 
 gem "ruby2js", "~> 5.1"
+
+gem "bridgetown-quick-search", "~> 2.0"
+
+gem "bridgetown-seo-tag", "~> 6.0"
+
+gem "bridgetown-feed", "~> 3.0"

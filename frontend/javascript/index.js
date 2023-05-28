@@ -2,9 +2,13 @@ import "index.css"
 import "syntax-highlighting.css"
 import * as Turbo from "@hotwired/turbo"
 import "bridgetown-lit-renderer"
+import "bridgetown-quick-search/dist"
+
 
 // Example Shoelace components. Mix 'n' match however you like!
 import "@shoelace-style/shoelace/dist/components/card/card.js"
+
+
 
 // Use the public icons folder:
 import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"

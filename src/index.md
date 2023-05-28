@@ -10,7 +10,7 @@ pagination:
 <ul id="list-posts">
   <% paginator.resources.each do |post| %>
     <li>
-      <%= render Home::PostCard.new(url: post.relative_url, title: post.data.title, summary: post.data.summary, date: post.data.date) %>
+      <%= render Home::PostCard.new(url: post.relative_url, title: post.data.title, summary: post.data.description, date: post.data.date) %>
     </li>
   <% end %>
 </ul>

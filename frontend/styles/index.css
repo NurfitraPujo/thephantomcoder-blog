@@ -43,7 +43,6 @@ h1 {
 /* Navbar */
 
 .navbar {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,6 +88,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin: 0;
 }
 
 #list-posts > li {
@@ -102,7 +102,7 @@ h1 {
   border-style: solid;
   border-color: rgba(var(--action-color-rgb), 0.5);
   border-radius: 6px;
-  width: 600px;
+  width: 800px;
   color: var(--body-color);
   padding: 20px;
   box-shadow: 4px 4px 8px 2px rgba(10,10,10, 0.2)
@@ -135,8 +135,6 @@ h1 {
 .post-card > article {
   font-size: 1rem;
 }
-
-
 
 main {
   flex: 1 auto;
@@ -184,6 +182,10 @@ footer a:hover {
   fill: var(--body-color);
 }
 
+.copyright {
+  font-size: 0.75rem;
+}
+
 hr {
   border: none;
   border-top: 2px dotted #bbb;
@@ -199,4 +201,9 @@ hr {
 
 .post h1 {
   color: var(--body-color);
+}
+
+.post .published_at {
+  color: var(--secondary-text-color);
+  font-weight: 200;
 }
