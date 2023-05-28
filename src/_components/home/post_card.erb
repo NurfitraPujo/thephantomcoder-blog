@@ -1,0 +1,9 @@
+<a class="post-card_url" href="<%= @url %>">
+  <sl-card class="post-card">
+    <div class="post-card_header" slot="header">
+      <p class="post-card_date"><%= @date.strftime("%b, %d %Y") %></p>
+      <h4><%= @title %></h4>
+    </div>
+    <article><%= truncated_summary %></article>
+  </sl-card>
+</a>

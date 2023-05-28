@@ -47,6 +47,8 @@ const outputFolder = "output"
  * @type {BuildOptions}
  */
 const ruby2js = require("@ruby2js/esbuild-plugin")
+const esbuildCopy = require('esbuild-plugin-copy').default
+
 
 const esbuildOptions = {
   plugins: [
@@ -55,7 +57,7 @@ const esbuildOptions = {
       eslevel: 2022,
       autoexports: "default",
       filters: ["camelCase", "functions", "lit", "esm", "return"]
-    })
+    }),
   ]
 }
 

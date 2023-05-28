@@ -4,9 +4,7 @@ import * as Turbo from "@hotwired/turbo"
 import "bridgetown-lit-renderer"
 
 // Example Shoelace components. Mix 'n' match however you like!
-import "@shoelace-style/shoelace/dist/components/button/button.js"
-import "@shoelace-style/shoelace/dist/components/icon/icon.js"
-import "@shoelace-style/shoelace/dist/components/spinner/spinner.js"
+import "@shoelace-style/shoelace/dist/components/card/card.js"
 
 // Use the public icons folder:
 import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"
