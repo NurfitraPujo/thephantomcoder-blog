@@ -10,6 +10,7 @@
   --action-color: #8779ab;
   --action-color-rgb: 135,121,171;
   --secondary-text-color: #9a9a9a;
+  --fa-font-path: "../fonts";
 }
 
 body {
@@ -27,8 +28,7 @@ body {
 
 a {
   color: var(--action-color);
-  text-decoration: underline;
-  text-decoration-color: #ffb088;
+  text-decoration: none;
 }
 
 h1 {
@@ -154,10 +154,49 @@ footer {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--action-color);
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-media img {
+  fill: var(--body-color);
 }
 
 hr {
   border: none;
   border-top: 2px dotted #bbb;
   margin: 3rem 0;
+}
+
+/* Post page */
+.post {
+  margin: 20px auto;
+  width: 80%;
+  color: var(--body-color);
+}
+
+.post h1 {
+  color: var(--body-color);
 }

@@ -8,4 +8,5 @@
 
   /* You can use variables from Open Props in your own custom properties. */
   --color-medium-gray: var(--gray-7);
+  --fa-font-path: "../fonts";
 }
