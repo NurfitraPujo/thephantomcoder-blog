@@ -235,11 +235,32 @@ article {
   margin: 20px auto;
   width: 80%;
   color: var(--body-color);
+
+  @media (max-width: 500px) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .post h1 {
   color: var(--body-color);
   font-weight: 700;
+
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
+}
+
+.post h2 {
+  @media (max-width: 500px) {
+    font-size: 1.5rem;
+  }
+}
+
+.post h3 {
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 }
 
 .post .published_at {
