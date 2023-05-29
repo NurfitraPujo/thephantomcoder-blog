@@ -1,14 +1,15 @@
 @import "variables.css";
+@import "fonts/fonts.css";
 
 /* Import the base Shoelace stylesheet: */
 @import "@shoelace-style/shoelace/dist/themes/dark.css";
 
 :root {
-  --body-background: #232323;
+  --body-background: #292828;
   --body-color: #f2f2f2;
   --heading-color: black;
-  --action-color: #8779ab;
-  --action-color-rgb: 135,121,171;
+  --action-color: #e3a54c;
+  --action-color-rgb: 227,165,76;
   --secondary-text-color: #9a9a9a;
   --fa-font-path: "../fonts";
 }
@@ -17,8 +18,8 @@ body {
   background: var(--body-background);
   color: var(--body-color);
   min-height: 100vh;
-  font-family: "Noto Sans", sans-serif;
-  margin: 0 8px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
   font-size: 108%;
   line-height: 1.5;
   display: flex;
@@ -75,8 +76,9 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .main-nav a {
@@ -126,7 +128,7 @@ h1 {
   background-color: var(--body-background);
   border-width: 1px;
   border-style: solid;
-  border-color: rgba(var(--action-color-rgb), 0.5);
+  border-color: rgba(var(--action-color-rgb), 0.3);
   border-radius: 6px;
   width: 100%;
   color: var(--body-color);
@@ -169,12 +171,13 @@ main {
   gap: 20px;
   flex: 1;
   margin: 10px auto 4rem;
+  padding: 0;
   width: 100%;
   min-height: calc(100vh - 400px);
   border-radius: 3px;
 
   @media (max-width: 500px) {
-    padding: 16px 16px 50px;
+    width: 90%;
   }
 }
 

@@ -11,7 +11,7 @@ description: |
 ---
 ## About Bridgetown
 
-Bridgetown is ruby framework that specialized in content management and authoring, a new contender in Jamstack platform. It was supposed to the successor of the already old Jekyll. The idea is bringing convenient platform like Jekyll but with more modern and robust environment.
+Bridgetown is ruby framework that specialized in content management and authoring, a new contender in Jamstack platform. It was supposed to be the successor of the already old Jekyll. The idea is bringing convenient platform like Jekyll but with more modern and robust environment.
 It combines the best experience of ruby, javascript and markdown together to create convenient blogging platform. Currently it is still not mature enough compared to other giants like Next JS but it is already showing great promise.
 
 Bridgetown support static sites generation, server side rendering (helped by [Roda](https://github.com/jeremyevans/roda)) and even can be integrated with javascript framework like React, Vue and etc. For basic templating languages there are liquid, erb or serbea (new template languange that combines the latter). 
