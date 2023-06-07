@@ -1,5 +1,4 @@
 import "index.css"
-import "syntax-highlighting.css"
 import * as Turbo from "@hotwired/turbo"
 import "bridgetown-lit-renderer"
 import "bridgetown-quick-search/dist"
