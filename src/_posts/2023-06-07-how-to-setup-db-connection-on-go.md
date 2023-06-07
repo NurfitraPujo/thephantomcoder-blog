@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to setup database connection on go project"
-date:   2023-06-07 21:35:00 +0700
+date:   2023-06-07 08:00:00 +0700
 categories: updates
 description: |
   Go is great and popular programming language. Capable of great performance, versatile and its simple syntax make Go is the default choice for many companies.
