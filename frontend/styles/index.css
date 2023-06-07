@@ -1,5 +1,6 @@
 @import "variables.css";
 @import "fonts/fonts.css";
+@import "syntax-highlighting.css";
 
 /* Import the base Shoelace stylesheet: */
 @import "@shoelace-style/shoelace/dist/themes/dark.css";
@@ -178,7 +179,7 @@ main {
   border-radius: 3px;
 
   @media (max-width: 500px) {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -235,6 +236,8 @@ article {
   margin: 20px auto;
   width: 80%;
   color: var(--body-color);
+  text-align: left;
+
 
   @media (max-width: 500px) {
     margin: 0;
@@ -245,6 +248,9 @@ article {
 .post h1 {
   color: var(--body-color);
   font-weight: 700;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
 
   @media (max-width: 500px) {
     font-size: 2rem;
@@ -252,30 +258,42 @@ article {
 }
 
 .post h2 {
+  line-height: 1.4;
   @media (max-width: 500px) {
     font-size: 1.5rem;
   }
 }
 
 .post h3 {
+  line-height: 1.4;
   @media (max-width: 500px) {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 
 .post .published_at {
   color: var(--secondary-text-color);
   font-weight: 200;
+  margin: 3px 0;
 }
 
 blockquote {
-  color: var(--secondary-text-color);
   font-weight: 200;
   border-left: 5px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.425em 10px;
+  margin: 1.5em 0;
+  padding-left: 25px;
 }
 
 blockquote > p {
   margin: 0;
+}
+
+.highlight {
+  overflow-y: auto;
+  margin: 0;
+}
+
+pre.highlight {
+  padding: 15px 20px;
+  /*color: var(--body-background)*/
 }
