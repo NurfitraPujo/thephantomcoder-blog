@@ -5,13 +5,13 @@ import "bridgetown-quick-search/dist"
 
 
 // Example Shoelace components. Mix 'n' match however you like!
-import "@shoelace-style/shoelace/dist/components/card/card.js"
+// import "@shoelace-style/shoelace/dist/components/card/card.js"
 
 
 
 // Use the public icons folder:
-import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"
-setBasePath("/shoelace-assets")
+// import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"
+// setBasePath("/shoelace-assets")
 
 // Uncomment the line below to add transition animations when Turbo navigates.
 // We recommend adding <meta name="turbo-cache-control" content="no-preview" />
