@@ -9,7 +9,7 @@
          url('./poppins-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
@@ -22,7 +22,7 @@
          url('./poppins-extralight-webfont.woff') format('woff');
     font-weight: 200;
     font-style: normal;
-
+    font-display: swap;
 }
 
 
@@ -35,7 +35,7 @@
          url('./poppins-extralightitalic-webfont.woff') format('woff');
     font-weight: 200;
     font-style: italic;
-
+    font-display: swap;
 }
 
 
@@ -48,5 +48,5 @@
          url('./poppins-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }

@@ -1,8 +1,8 @@
 <div class="post-card">
   <div class="post-card_header" slot="header">
     <p class="post-card_date"><%= @date.strftime("%b, %d %Y") %></p>
-    <h4><%= @title %></h4>
+    <h4><%= truncated_title %></h4>
   </div>
   <article><%= truncated_summary %></article>
-  <a class="post-card_link" href="<%= @url %>"></a>
+  <a class="post-card_link" href="<%= @url %>" aria-label="Read more about <%= truncated_title %>"></a>
 </div>

@@ -1,7 +1,7 @@
 import "index.css"
 import * as Turbo from "@hotwired/turbo"
-import "bridgetown-lit-renderer"
-import "bridgetown-quick-search/dist"
+// import "bridgetown-lit-renderer"
+// import "bridgetown-quick-search/dist"
 
 
 // Example Shoelace components. Mix 'n' match however you like!
@@ -18,7 +18,7 @@ import "bridgetown-quick-search/dist"
 // to your HTML head if you turn on transitions. Use data-turbo-transition="false"
 // on your <main> element for pages where you don't want any transition animation.
 //
-// import "./turbo_transitions.js"
+import "./turbo_transitions.js"
 
 // Import all JavaScript & CSS files from src/_components
 // To opt into `.global.css` & `.lit.css` nomenclature, change the `css` extension below to `global.css`.
