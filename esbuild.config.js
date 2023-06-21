@@ -46,18 +46,18 @@ const outputFolder = "output"
  * @typedef { import("esbuild").BuildOptions } BuildOptions
  * @type {BuildOptions}
  */
-const ruby2js = require("@ruby2js/esbuild-plugin")
-const esbuildCopy = require('esbuild-plugin-copy').default
+// const ruby2js = require("@ruby2js/esbuild-plugin")
+// const esbuildCopy = require('esbuild-plugin-copy').default
 
 
 const esbuildOptions = {
   plugins: [
     // See docs on Ruby2JS options here: https://www.ruby2js.com/docs/options
-    ruby2js({
-      eslevel: 2022,
-      autoexports: "default",
-      filters: ["camelCase", "functions", "lit", "esm", "return"]
-    }),
+    // ruby2js({
+    //   eslevel: 2022,
+    //   autoexports: "default",
+    //   filters: ["camelCase", "functions", "lit", "esm", "return"]
+    // }),
   ]
 }
 

@@ -12,5 +12,7 @@
     </main>
 
     <%= render "footer", metadata: site.metadata %>
+
+    <script data-turbo-track="reload" src="<%= webpack_path :js %>" defer></script>
   </body>
 </html>
