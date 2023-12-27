@@ -44,4 +44,5 @@ Bridgetown.configure do |config|
   init :"bridgetown-quick-search"
   init :"bridgetown-seo-tag"
   init :"bridgetown-feed"
+  init :bridgetown_internal_markdown_links
 end

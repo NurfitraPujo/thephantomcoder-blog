@@ -3,6 +3,7 @@ layout: post
 title:  "Travelling will inspire you"
 date:   2023-06-21 08:00:00 +0700
 categories: updates
+published: false
 description: |
   When you travel, usually you get new experiences. According to many scientific reports, new experiences will boost our brain functions.
   This boosts, will make us feel happier which will help us stay inspired.
@@ -24,4 +25,4 @@ Most of my tasks was able to delivered before deadlines and I was able to solve 
 The travel experiences with my close friends give me new experiences and make me feel inspired.
 
 That's why my friend, if you stuck in the slumps, or feeling burnouts or whatever that make you feel uninspired. 
-I recommend you to travel and get new experiences.
+I recommend you to go out of your homes and travel to get new experiences.
