@@ -10,7 +10,7 @@
   "devDependencies": {
     "@ruby2js/esbuild-plugin": "^1.0.0",
     "cssnano": "^6.0.1",
-    "esbuild": "^0.15.12",
+    "esbuild": "^0.19.2",
     "esbuild-plugin-copy": "^2.1.1",
     "glob": "^8.0.1",
     "postcss": "^8.4.12",

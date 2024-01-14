@@ -1,13 +1,10 @@
-import "index.css"
-import * as Turbo from "@hotwired/turbo"
+import "$styles/index.css";
+import * as Turbo from "@hotwired/turbo";
 // import "bridgetown-lit-renderer"
 // import "bridgetown-quick-search/dist"
 
-
 // Example Shoelace components. Mix 'n' match however you like!
 // import "@shoelace-style/shoelace/dist/components/card/card.js"
-
-
 
 // Use the public icons folder:
 // import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js"
@@ -18,11 +15,11 @@ import * as Turbo from "@hotwired/turbo"
 // to your HTML head if you turn on transitions. Use data-turbo-transition="false"
 // on your <main> element for pages where you don't want any transition animation.
 //
-import "./turbo_transitions.js"
+import "./turbo_transitions.js";
 
 // Import all JavaScript & CSS files from src/_components
 // To opt into `.global.css` & `.lit.css` nomenclature, change the `css` extension below to `global.css`.
 // Read https://www.bridgetownrb.com/docs/components/lit#sidecar-css-files for documentation.
-import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}"
+import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}";
 
-console.info("Bridgetown is loaded!")
+console.info("Bridgetown is loaded!");
