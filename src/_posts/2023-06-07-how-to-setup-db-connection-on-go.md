@@ -155,7 +155,7 @@ Remember our `dbInstance` variable will hold the database connection for our ent
 The bad news is, database connection has its own lifetime. When the connection lifetime is expired the connection cannot be used and our operation will fail.
 Then why don't we just remove the connection lifetime? Maybe we can, but usually we use connection lifetime as a gate keeping if there an unoptimized query (eg: *unnecessary long running query*). 
 If there are long running query and it raises error because connection expired then we can know the specific query and improve it. 
-Remember, silent bugs and failures is recipe of disaster.
+*Remember, silent bugs and failures is recipe of disaster*.
 
 So, how to to prevent failures because of connection expires? Fortunately there are feature named *Connection Pooling*.
 Almost every dbms has Connection Pooling feature built in. What is it? I will quote from [arctype](https://arctype.com/blog/connnection-pooling-postgres/#:~:text=comes%20into%20play.-,What%20is%20connection%20pooling%3F,active%20connection%20to%20the%20user.) since it has concise explanation.
