@@ -45,4 +45,6 @@ Bridgetown.configure do |config|
   init :"bridgetown-seo-tag"
   init :"bridgetown-feed"
   init :bridgetown_internal_markdown_links
+
+  config.internal_markdown_links.collections = ["posts", "docs"]
 end
