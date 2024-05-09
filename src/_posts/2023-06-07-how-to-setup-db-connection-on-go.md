@@ -3,6 +3,7 @@ layout: post
 title:  "How to setup database connection on go project"
 date:   2023-06-07 08:00:00 +0700
 categories: updates
+tags: ['golang', 'database', 'singleton', 'postgresql', 'pgx']
 description: |
   Go is great and popular programming language. Capable of great performance, versatile and its simple syntax make Go is the default choice for many companies.
   Most of Go project will connect to the database in their codebase. So how do we setup database connection in Go project?

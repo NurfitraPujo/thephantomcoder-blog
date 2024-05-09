@@ -3,6 +3,7 @@ layout: post
 title:  "Why i used Bridgetown to build my blog"
 date:   2023-05-28 17:45:57 +0700
 categories: updates
+tags: ['blogging','cms']
 description: |
   Bridgetown is new contender in Jamstack platform. 
   It was supposed to the successor of the already old Jekyll. 

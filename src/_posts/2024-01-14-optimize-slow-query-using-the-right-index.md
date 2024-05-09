@@ -4,6 +4,7 @@ title: "Optimize Slow Query Part 1 - Using the right index"
 date: 2024-01-14 07:00:00 +0700
 categories: updates
 published: true
+tags: ['database', 'postgresql', 'sql']
 description: |
   Database indexes are easy and low hanging fruit for optimizing database performance. By adding the right index you can drastically improve your application queries performance. Unfortunately in many cases index are not used effectively causing many slow queries. So how can we optimize a slow query by building the right index?
 ---

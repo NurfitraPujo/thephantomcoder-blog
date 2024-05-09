@@ -6,6 +6,7 @@
 
 :root {
   --body-background: #292828;
+  --body-background-darker: hsl(40, 10%, 10%);
   --body-color: #f2f2f2;
   --heading-color: black;
   --action-color: #e3a54c;
@@ -135,7 +136,7 @@ h1 {
   border-radius: 6px;
   color: var(--body-color);
   padding: 20px;
-  box-shadow: 4px 4px 8px 2px rgba(10,10,10, 0.2)
+  box-shadow: 4px 4px 8px 2px rgba(10,10,10, 0.2);
 }
 
 .post-card_header {
@@ -143,7 +144,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -289,6 +290,23 @@ article {
   margin: 3px 0;
 }
 
+.tags {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 5px;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.tag {
+  color:  var(--secondary-text-color);
+  list-style: none;
+  font-size: 0.875rem;
+  padding: 1px;
+}
+
 blockquote {
   font-weight: 200;
   border-left: 5px solid #ccc;
@@ -299,6 +317,7 @@ blockquote {
 blockquote > p {
   margin: 0;
 }
+
 
 /* Rouge classes */
 

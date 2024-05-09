@@ -3,6 +3,13 @@
     <p class="post-card_date"><%= @date.strftime("%b, %d %Y") %></p>
     <h4><%= truncated_title %></h4>
   </div>
+  <% if @tags && @tags.size > 0 %>
+    <ul class="tags">
+      <% tags.each do |tag| %>
+        <li class="tag"><%= tag %></li>
+      <% end %>
+    </ul>
+  <% end %>
   <article><%= truncated_summary %></article>
   <a class="post-card_link" href="<%= @url %>" aria-label="Read more about <%= truncated_title %>"></a>
 </div>
