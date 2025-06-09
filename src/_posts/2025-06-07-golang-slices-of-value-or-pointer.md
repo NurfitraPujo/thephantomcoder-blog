@@ -75,23 +75,24 @@ Now that we've covered the basics, let's explore how these two approaches impact
 ### Time Taken: The Cumulative Effect
 The ultimate measure of performance often comes down to execution time.
 
- * Slices of values can be faster for scenarios involving small data and frequent iterations due to their excellent cache locality and reduced GC pressure. The cost of copying small values is often less than the overhead of dereferencing pointers and managing more dispersed heap objects.
- * Slices of pointers become more efficient when dealing with very large data structures, as copying those large values would be prohibitively expensive. They also shine when you need to share a single instance of an object across different parts of your application without creating multiple copies. The trade-off is often increased GC activity and potentially poorer cache performance for sequential access.
+**Slices of values** can be faster for scenarios involving small data and frequent iterations due to their excellent cache locality and reduced GC pressure. The cost of copying small values is often less than the overhead of dereferencing pointers and managing more dispersed heap objects.
+
+**Slices of pointers** become more efficient when dealing with very large data structures, as copying those large values would be prohibitively expensive. They also shine when you need to share a single instance of an object across different parts of your application without creating multiple copies. The trade-off is often increased GC activity and potentially poorer cache performance for sequential access.
 
 ## Impact on Developer Experience (DX)
 
 Beyond raw performance numbers, the choice between values and pointers in slices also influences how easy your code is to write, read, debug, and maintain.
 
- * Simplicity and Readability:
+ * **Simplicity and Readability**:
    * Slices of values often lead to simpler, more straightforward code. You're working directly with the data, reducing the mental overhead of indirection. This can be particularly beneficial for Go newcomers.
    * Slices of pointers introduce an extra layer of indirection. While familiar to experienced developers, it can make the flow harder to trace for those less accustomed to pointer semantics.
- * Mutability and Side Effects:
+ * **Mutability and Side Effects**:
    * When you pass a slice of values to a function or assign an element, you're usually working with a copy of the data. Modifications to that copy won't affect the original slice element unless you explicitly pass a pointer to the value. This can be safer by preventing unintended side effects.
    * With slices of pointers, all references point to the same underlying data. If one part of your program modifies the data through a pointer, that change is immediately visible to all other parts holding a pointer to the same object. This is powerful for sharing state but demands careful management to avoid unexpected mutations and hard-to-trace bugs.
- * Handling nil Values:
+ * **Handling nil Values**:
    * Slices of values do not inherently have nil elements (unless the zero value of the type itself is relevant, like a nil slice within a struct).
    * Slices of pointers can contain nil pointers. This means you often need to add nil checks before dereferencing a pointer, which adds boilerplate code and potential panic opportunities if forgotten.
- * Initialization and Creation:
+ * **Initialization and Creation**:
    * Creating and populating slices of values can feel more natural as you directly assign the struct instances.
    * Populating slices of pointers often requires explicitly taking the address of a value (e.g., `&MyStruct{...}`) or using `new(MyStruct)` for each element, adding a slight syntactic overhead. 
    
